@@ -6,8 +6,6 @@ class HomeController extends Controller {
   async index() {
     const { ctx } = this;
     const list = await ctx.service.getZh.find();
-    console.log(list);
-
     await ctx.render('zh.html', {
       list,
     });
