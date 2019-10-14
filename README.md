@@ -31,3 +31,14 @@ $ npm stop
 
 
 [egg]: https://eggjs.org
+
+
+
+
+## 安装模板渲染
+* yarn add egg-view-ejs --save-dev
+
+## 连接mongodb
+* 安装跨域设置 `yarn add egg-cors --save-dev`
+* [egg+mongodb 配置](https://www.jianshu.com/p/44afea9b4607)
+* 安装mongodb `yarn add egg-mongoose --save-dev`

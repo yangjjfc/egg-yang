@@ -22,11 +22,23 @@ module.exports = appInfo => {
   const userConfig = {
     // myAppName: 'egg',
   };
-  exports.view = {
+  config.view = {
     mapping: {
       '.html': 'ejs',
     },
   };
+  config.cors = {
+    origin: '*', // 访问白名单,根据你自己的需要进行设置
+    allowMethods: 'GET,HEAD,PUT,POST,DELETE,PATCH',
+  };
+  config.mongoose = {
+    url: 'mongodb://127.0.0.1:27017/test',
+    options: {
+      // user: 'test', // 数据库账号
+      // pass: 'test'  // 数据库密码
+    },
+  };
+
   return {
     ...config,
     ...userConfig,
