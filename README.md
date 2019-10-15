@@ -42,3 +42,14 @@ $ npm stop
 * 安装跨域设置 `yarn add egg-cors --save-dev`
 * [egg+mongodb 配置](https://www.jianshu.com/p/44afea9b4607)
 * 安装mongodb `yarn add egg-mongoose --save-dev`
+
+
+## 安装mysql
+* yarn add egg-mysql -S 暂时没用
+
+## 插件
+* yarn add egg-validate -S 验证
+* [egg-validate](http://www.mamicode.com/info-detail-2719633.html)
+* yarn add egg-bizerror -S 业务错误处理封装成插件
+
+* [史上最强egg框架的error处理机制](https://blog.csdn.net/qq_33589252/article/details/84350064)

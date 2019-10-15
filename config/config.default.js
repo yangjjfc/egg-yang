@@ -38,7 +38,15 @@ module.exports = appInfo => {
       // pass: 'test'  // 数据库密码
     },
   };
-
+  // 业务错误处理封装成插件
+  exports.bizerror = {
+    breakDefault: false, // disable default error handler禁用默认错误处理
+    sendClientAllParams: false, // return error bizParams to user，返回错误参数给用户
+    interceptAllError: false, // handle all exception, not only bizError exception处理所有的异常，不仅是业务异常。
+  };
+  exports.onerror = {
+    errorPageUrl: (err, ctx) => ctx.errorPageUrl || '/500',
+  };
   return {
     ...config,
     ...userConfig,
