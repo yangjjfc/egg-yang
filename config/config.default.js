@@ -44,9 +44,13 @@ module.exports = appInfo => {
     sendClientAllParams: false, // return error bizParams to user，返回错误参数给用户
     interceptAllError: false, // handle all exception, not only bizError exception处理所有的异常，不仅是业务异常。
   };
-  exports.onerror = {
-    errorPageUrl: (err, ctx) => ctx.errorPageUrl || '/500',
+  exports.validate = {
+    // convert: false,
+    // validateRoot: false,
   };
+  //   exports.onerror = {
+  //     errorPageUrl: (err, ctx) => ctx.errorPageUrl || '/500',
+  //   };
   return {
     ...config,
     ...userConfig,
