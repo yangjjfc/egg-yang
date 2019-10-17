@@ -53,3 +53,5 @@ $ npm stop
 * yarn add egg-bizerror -S 业务错误处理封装成插件
 
 * [史上最强egg框架的error处理机制](https://blog.csdn.net/qq_33589252/article/details/84350064)
+*  D:\Program Files\mongodb\bin>mongod -dbpath "D:\Program Files\mongodb\data\db" 启动mongodb服务
+* [Egg项目做请求字段验证-egg-validate-plus](https://blog.csdn.net/roamingcode/article/details/87815602)

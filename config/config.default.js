@@ -16,7 +16,7 @@ module.exports = appInfo => {
   config.keys = appInfo.name + '_1570882724186_6391';
 
   // add your middleware config here
-  config.middleware = [];
+  config.middleware = [ 'notfoundHandler', 'errorHandler' ];
 
   // add your user config here
   const userConfig = {
@@ -25,6 +25,11 @@ module.exports = appInfo => {
   config.view = {
     mapping: {
       '.html': 'ejs',
+    },
+  };
+  exports.security = {
+    csrf: {
+      enable: false,
     },
   };
   config.cors = {
@@ -48,9 +53,9 @@ module.exports = appInfo => {
     // convert: false,
     // validateRoot: false,
   };
-  //   exports.onerror = {
-  //     errorPageUrl: (err, ctx) => ctx.errorPageUrl || '/500',
-  //   };
+  exports.onerror = {
+    errorPageUrl: (err, ctx) => ctx.errorPageUrl || '/500',
+  };
   return {
     ...config,
     ...userConfig,

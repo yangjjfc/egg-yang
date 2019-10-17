@@ -10,8 +10,8 @@ module.exports = app => {
 
 
   //   // 注册登录
-  //   router.post('/api/v1/signup', controller.user.signup);
-  //   router.post('/api/v1/signin', controller.user.signin);
-  //   router.get('/api/v1/signoff', controller.user.signout);
+  router.post('/gateway/v1/signup', controller.user.signup);
+  //   router.post('/gateway/v1/signin', controller.user.signin);
+  //   router.get('/gateway/v1/signoff', controller.user.signout);
 
 };
