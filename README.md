@@ -50,6 +50,7 @@ $ npm stop
 ## 插件
 * yarn add egg-validate -S 验证
 * [egg-validate](http://www.mamicode.com/info-detail-2719633.html)
+* [egg-validate添加规则](http://www.mamicode.com/info-detail-2719633.html)
 * yarn add egg-bizerror -S 业务错误处理封装成插件
 
 * [史上最强egg框架的error处理机制](https://blog.csdn.net/qq_33589252/article/details/84350064)
